@@ -1,0 +1,21 @@
+<script>
+  const number = prompt(parseInt("Enter a positive number: "));
+  let isPrime = true;
+
+  if (number === 1) {
+    console.log("1 e invalido.");
+  } else if (number > 1) {
+    for (let i = 2; i < number; i++) {
+      if (number % i == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+
+    if (isPrime) {
+      console.log(`${number} e um numero primo`);
+    } else {
+      console.log(`${number} não e um numero primo`);
+    }
+  }
+</script>

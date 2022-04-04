@@ -1,0 +1,13 @@
+<script>
+  let a = Number(prompt("digite um numero"));
+
+  let b = Number(prompt("digite um numero"));
+  var mdc = function (n1, n2) {
+    if (!n2) {
+      return n1;
+    }
+
+    return mdc(n2, n1 % n2);
+  };
+  console.log(mdc(a, b));
+</script>
